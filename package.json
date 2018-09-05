@@ -1,5 +1,5 @@
 {
-  "name": "serverless-mongodb-app",
+  "name": "serverless-nodejs-app",
   "version": "0.0.1",
   "description": "Serverless module dependencies",
   "author": "Kevin Ogden",
@@ -10,9 +10,16 @@
     "url": "github.com:kogden/serverless-mongodb.git"
   },
   "keywords": [],
-  "devDependencies": {},
+  "devDependencies": {
+    "serverless-offline": "^3.25.6"
+  },
   "dependencies": {
-    "mongoose": "~6.1.0",
-    "dotenv": "~6.1.0"
+    "dotenv": "^6.0.0",
+    "mongoose": "~5.2.6",
+    "serverless": "^1.2.1"
+  },
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
